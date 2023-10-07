@@ -1,0 +1,437 @@
+div {
+    font-family: Poppins;
+}
+
+h6 {
+    color: #F18234;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 31px;
+    margin-bottom: 21px;
+}
+
+h5 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+label {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+
+li {
+    list-style: none;
+    color: #707070;
+}
+
+span {
+    color: #707070;
+    font-family: Poppins;
+    /* text-align: center; */
+    font-size: 14px;
+}
+
+.orange {
+    color: #F18234;
+}
+
+.row {
+    margin: 0;
+}
+
+.thead {
+    margin-bottom: 18px;
+    background-color: #EBF6FE;
+    border-radius: 8px;
+}
+
+.tbody {
+    /* margin-bottom: 18px; */
+    background-color: #EBF6FE;
+    border-top-left-radius: 8px;
+    /* border-bottom-left-radius: 8px; */
+}
+
+.th {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.cart-head {
+    display: flex;
+    border-top-left-radius: 8px;
+    background-color: #EBF6FE;
+    color: #db762d;
+}
+
+.cart-foot {
+    background-color: #EBF6FE;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.payment {
+    background-color: #EBF6FE;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 12px;
+    border-radius: 8px !important;
+
+}
+
+.accordion-button {
+    display: flex;
+    border: none;
+    border-radius: 8px !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #000025;
+    box-shadow: none;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+
+}
+
+.modal-dialog {
+    max-width: 493px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-footer {
+    border-top: none;
+
+}
+
+.modal-footer button {
+    background-color: #FC0D1B;
+    border-radius: 8px;
+    margin: 16px 24px;
+}
+
+.modal-footer .btn-done {
+    border: none;
+    border-radius: 5px;
+    background-color: #F18234;
+    color: #fff;
+    padding: 15px 48px 15px 49px;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+}
+
+.modal-footer .add {
+    border: none;
+    background-color: transparent;
+    color: #34A2F1;
+    font-family: Poppins;
+}
+
+.form-control {
+    border: 1px solid #707070;
+    display: flex;
+    height: 47.855px;
+    padding: 11.84px 45.701px 12.016px 11.754px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.form-control:disabled {
+    background-color: #B1B1B1;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.tution-fee {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 16px;
+    letter-spacing: 0.16px;
+}
+
+.tution-fee {
+    background-color: #EBF6FE;
+    border-top-right-radius: 8px;
+    /* border-bottom-right-radius:8px ; */
+
+}
+
+.tution-fee p {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+}
+
+.tution-fee h4 {
+    text-align: right;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.btn-edit {
+    color: #2a9aeb;
+    background-color: transparent;
+
+}
+
+.btn-remove {
+    color: #FC0D1B;
+    background-color: transparent;
+
+}
+
+.coupon {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: #34A2F1;
+    color: white;
+    font-family: Poppins;
+    padding: 12px 32px;
+    border: none;
+    margin-left: -105px;
+}
+
+.btn-primary:hover {
+    background-color: #2a9aeb;
+    color: white;
+}
+
+.total {
+    border: 2px solid #F18234;
+    /* border-right: none; */
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.25);
+    background: #FFF;
+    margin-bottom: 18px;
+}
+
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.buy-button {
+    background-color: #F18234;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buy-button:hover {
+    background-color: #db762d;
+    color: #fff;
+}
+
+.buy-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.pay {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+.hide-show {
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    h6 {
+        margin-top: 22px;
+        margin-bottom: 14px;
+    }
+
+    li {
+        padding-left: 4px;
+        list-style: none;
+        color: #000;
+    }
+
+    .form-control {
+        margin-right: -100px;
+        margin-top: -2px;
+        margin-bottom: -2px;
+    }
+
+    .hide-show {
+        display: flex;
+        align-items: center;
+    }
+
+    .hide-mob {
+        display: none;
+    }
+
+    .modal-dialog {
+        max-width: 493px;
+    }
+
+    .modal-footer {
+        padding: 0;
+    }
+
+    .modal-footer button {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+
+
+    .modal-footer .btn-done {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+
+    .tbody {
+        z-index: 1;
+        border-radius: 8px;
+    }
+
+    .cart-head {
+        background-color: #2a9aeb;
+        color: #fff;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+    }
+
+    .cart-foot {
+        /* z-index: -1; */
+        margin-top: -12px;
+        background-color: transparent;
+    }
+
+    .payment {
+        background-color: #000025;
+    }
+
+    .payment p {
+        color: #fff;
+    }
+
+    .accordion-item {
+        border: none;
+        margin-bottom: 12px;
+        border-radius: 8px !important;
+
+    }
+
+    .accordion-button {
+        display: flex;
+        border: none;
+        border-radius: 8px !important;
+
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #000;
+        background-color: #fff;
+        box-shadow: none;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+
+    }
+
+    .btn-edit {
+        color: #fff;
+        background-color: #2a9aeb;
+        border-bottom-left-radius: 8px;
+
+    }
+
+    .btn-remove {
+        color: #fff;
+        background-color: #FC0D1B;
+        border-bottom-right-radius: 8px;
+    }
+
+    .tution-fee {
+        display: inline;
+        text-align: right;
+        background: #000025;
+        color: #fff;
+        /* border-radius: 8px; */
+        padding: 16px;
+        padding-top: 32px;
+        /* z-index: -1; */
+        margin-top: -10px;
+    }
+
+    .btn-primary {
+        padding-bottom: 8px;
+        margin-left: -12px;
+    }
+
+    .total {
+        box-shadow: none;
+        border: 0.5px solid #F18234;
+        /* stroke-width: 0.5px; */
+        stroke: #F18234;
+    }
+}

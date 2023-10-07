@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>CartExceed</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-3 pb-0  border-0">
+                    <h5 class="modal-title fw-semibold" id="exampleModalLongTitle"> Edit Student’s Details</h5>
+                    <button type="button" class="close  border-0 bg-transparent" data-dismiss="modal"
+                        aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <label for="firstName" class="">First name</label>
+                        <input type="email" class="form-control " placeholder="Test" id="firstName">
+                    </div>
+                    <div class="">
+                        <label for="firstName" class="">Last name</label>
+                        <input type="email" class="form-control " placeholder="One" id="firstName">
+                    </div>
+                    <div class=" ">
+                        <label for="firstName" class="">Date of birth</label>
+                        <input type="date" class="form-control " placeholder="22 Sep 2000" id="firstName">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="add w-50 m-0"><i class="bi bi-plus-lg"></i> Add Student</button>
+                    <button type="submit" class="btn-done w-50 m-0">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-3 pb-0 border-0">
+                    <h5 class="modal-title fw-semibold" id="exampleModalLongTitle">Remove</h5>
+                    <button type="button" class="close border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <p class="p-3">
+                        Are you sure you want to remove this program from your cart?
+                    </p>
+                    <div class="modal-footer p-0">
+                        <button type="button" class="d-flex border-0 text-white px-4 py-2" data-dismiss="modal"
+                            aria-label="Close">
+                            <i class="bi bi-trash pe-2"></i>Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <h6 class="ps-3">Cart</h6>
+        <div class="row p-0">
+            <div class="col-lg-9 order-2 order-lg-1 p-3">
+                <div class="row hide-mob thead mb-3 fw-bolder">
+                    <div class="p-3 col-lg-4">
+                        Course
+                    </div>
+                    <div class="p-3 col-lg-3">
+                        Date
+                    </div>
+                    <div class="p-3 col-lg-2">
+                        Time
+                    </div>
+                    <div class="p-3 col-lg-3 text-center orange">
+                        Tution Fee +HST
+                    </div>
+                </div>
+                <div>
+                    <div class="row mb-3">
+                        <div class="d-block col-lg-10 tbody">
+                            <div class="row">
+                                <div class="p-3 col-lg-5 cart-head">
+                                    <p class="align-items-start h-50">Discovery robotics | Age 8 | Thornhill</p>
+                                </div>
+                                <div class="px-3 pt-3 col-lg-3 d-flex align-items-start">
+                                    <span class="hide-show">Date: </span>
+                                    <li> Sep 10, 2023 - Oct 29, 2023</li>
+                                </div>
+                                <div class="px-3 pt-3 col-lg-4 d-flex align-items-start">
+                                    <span class="hide-show">Time: </span>
+                                    <li> Sunday @9:00-10:00AM</li>
+                                </div>
+                            </div>
+                            <hr class="hide-show">
+                            <div class="row px-3 pb-3">
+                                <p class="col-lg-2 fw-semibold">Student's Detail</p>
+                                <p class="col-lg">
+                                    Sharan Test | Sep 6, 2023
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <div class="p-3 col-lg-2 tution-fee orange">
+                            <p class="hide-show float-start">Tution Fee </p>
+                            $360
+                        </div>
+                        <div class="payment px-3">
+                            <p class="pb-3">Select payment method</p>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <input type="radio" id="radio1" name="payment" class="form-check-input m-0">
+                                            <label for="radio1" class="m-0 ps-2">Full payment</label>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <table class="w-100">
+                                                <thead class="border-bottom">
+                                                    <tr>
+                                                        <th>Due Date</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Nov 4, 2023</td>
+                                                        <td>429.4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <input type="radio" id="radio2" name="payment" class="form-check-input m-0">
+                                            <label for="radio2" class="m-0 ps-2">Pre-Authorized Monthly (card on file
+                                                will be charged on the 15th of each
+                                                month)</label>
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <table class="w-100">
+                                                <thead class="border-bottom">
+                                                    <tr>
+                                                        <th>Due Date</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Nov 4, 2023</td>
+                                                        <td>429.4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 4, 2023</td>
+                                                        <td>429.4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 order-1 order-lg-2 p-3">
+                <div class="p-3 total">
+                    <div class="text-end">
+                        <span class="float-start">Programs: Robotics</span>
+                        $360
+                    </div>
+                    <div class="text-end">
+                        <span class="float-start">Camps: Robotics</span>
+                        $360
+                    </div>
+                    <div class="container coupon mt-4 mb-3 p-0 ">
+                        <input type="text " class="form-control border border-dark rounded " placeholder="Coupon ">
+                        <button class="btn-primary rounded ">Apply</button>
+                    </div>
+
+                    <div class="text-end">
+                        <p class="float-start">Sub-total</p>
+                        $720
+                    </div>
+
+                    <div class="text-end">
+                        <p class="float-start">HST</p>
+                        $18
+                    </div>
+                    <!-- <div class="d-flex sub-total">
+                        <div class="d-flex justify-content-left ">
+                            <p class="my-2 ">Sub-total</p>
+                        </div>
+                        <div class="d-flex justify-content-right ">
+                            <span>$720</span>
+                        </div>
+                    </div> -->
+
+
+                    <!-- <div class="d-flex sub-total">
+                        <div class="d-flex justify-content-left ">
+                            <p class="my-2 ">HST</p>
+                        </div>
+                        <div class="d-flex justify-content-right ">
+                            <span>$18</span>
+                        </div>
+                    </div> -->
+
+
+                    <hr>
+                    <div class="text-end pay">
+                        <p class="float-start">To Pay</p>
+                        $738
+                    </div>
+                    <!-- <div class="d-flex pay">
+                        <div class="d-flex justify-content-left ">
+                            <p>To Pay</p>
+                        </div>
+                        <div class="d-flex justify-content-right ">
+                            <span align="right ">$738</span>
+                        </div>
+                    </div> -->
+                    <div class="d-grid mt-4 ">
+                        <button type="button " class="buy-button btn-block ">Proceed to buy (2 Items)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
